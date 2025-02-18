@@ -6,7 +6,7 @@
 	"email": "pageserris@gmail.com",
 	"password": "Bs57Xaof3",
 	"isAdmin": false,
-	"mobileNumber": 09295557973,
+	"mobileNumber": "09295557973",
 	"countryOfOrigin": "Philippines"
 	},
 	{
@@ -16,7 +16,7 @@
 	"email": "noellefanthom@gmail.com",
 	"password": "zn&1Wc9q5y",
 	"isAdmin": true,
-	"mobileNumber": 09235449450,
+	"mobileNumber": "09235449450",
 	"countryOfOrigin": "Philippines"
 	},
 	{
@@ -26,7 +26,7 @@
 	"email": "darbyperring@gmail.com",
 	"password": "W8I65R6fa",
 	"isAdmin": false,
-	"mobileNumber": 09833229713,
+	"mobileNumber": "09833229713",
 	"countryOfOrigin": "Philippines"
 	}
 ]
