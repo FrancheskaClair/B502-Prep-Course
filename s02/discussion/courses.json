@@ -1,0 +1,33 @@
+[
+	{
+	"_id": "601ccbe89bcd482ee8fa2c99",
+	"name": "HTML",
+	"description": "Learn the basics on how to create a web page",
+	"price": 1000,
+	"isActive": true,
+	"slots": 20,
+	"enrollees": ["507f1f77bcf86cd799439011"],
+	"dateTimeCreated": "2020-03-15T15:00:00.00Z"
+	},
+
+	{
+    "_id": "507f191e810c19729de860ea",
+    "name": "CSS",
+    "description": "Let's make our applications look cool!",
+    "price": 2000,
+    "isActive": false,
+    "slots": "20",
+    "enrollees": [],
+    "datetimeCreated": "2021-08-15T15:00:00.00Z"
+	}, 
+	{
+    "_id": "601ccc169bcd482ee8fa2c9a",
+    "name": "JavaScript",
+    "description": "Make websites fun and interactive!",
+    "price": 4000,
+    "isActive": true,
+    "slots": "15",
+    "enrollees": ["507f1f77bcf86cd799439011"],
+    "datetimeCreated": "2022-02-01T15:00:00.00Z"
+	}
+]

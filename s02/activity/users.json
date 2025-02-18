@@ -1,0 +1,34 @@
+[
+	{
+	"_id": "67b4776e82907cb70ec15b64",
+	"firstName": "Page",
+	"lastName": "Serris",
+	"email": "pageserris@gmail.com",
+	"password": "Bs57Xaof3",
+	"isAdmin": false,
+	"mobileNumber": 09295557973,
+	"countryOfOrigin": "Philippines"
+	},
+	{
+	"_id": "67b48020ffb48e2315058bfb",
+	"firstName": "Noelle",
+	"lastName": "Fanthom",
+	"email": "noellefanthom@gmail.com",
+	"password": "zn&1Wc9q5y",
+	"isAdmin": true,
+	"mobileNumber": 09235449450,
+	"countryOfOrigin": "Philippines"
+	},
+	{
+	"_id": "67b48219549d5482a5fb7aa5",
+	"firstName": "Darby",
+	"lastName": "Perring",
+	"email": "darbyperring@gmail.com",
+	"password": "W8I65R6fa",
+	"isAdmin": false,
+	"mobileNumber": 09833229713,
+	"countryOfOrigin": "Philippines"
+	}
+]
+
+

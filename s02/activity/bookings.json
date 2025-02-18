@@ -1,0 +1,20 @@
+[
+	{
+		"_id": "67b4886c809234455b342054",
+		"userId": "67b4776e82907cb70ec15b64",
+		"flightId": "67b48502082c343aca572af6",
+		"status": "In Progress"
+	}, 
+	{
+		"_id": "67b48899a6d00bc0c2e0cc6a",
+		"userId": "67b48020ffb48e2315058bfb",
+		"flightId": "67b484eb899f23860d8cba0c",
+		"status" "Pending"
+	},
+	{
+		"_id": "67b488aaaa45d7702749c251",
+		"userId": "67b48219549d5482a5fb7aa5",
+		"flightId": "67b484d9211df7a957fbbade",
+		"status": "Pending"
+	}
+]

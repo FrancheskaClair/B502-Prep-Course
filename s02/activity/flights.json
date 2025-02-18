@@ -1,0 +1,36 @@
+[
+	{
+		"_id": "67b48502082c343aca572af6",
+		"flightNumber": "BA283",
+		"origin": "America",
+		"destination": "New Zealand",
+		"departureDate": "02-18-2025",
+		"arrivalDate": "02-19-2025",
+		"price": 64969,
+		"slots":  15,
+		"isActive": true
+	},
+	{
+		"_id": "67b484eb899f23860d8cba0c",
+		"flightNumber": "AS412",
+		"origin": "Japan",
+		"destination": "Canada",
+		"departureDate": "03-20-2025",
+		"arrivalDate": "03-21-2025",
+		"price": 59564,
+		"slots": 20,
+		"isActive": false
+	},
+	{
+		"_id": "67b484d9211df7a957fbbade",
+		"flightNumber": "UA3543",
+		"origin": "Malaysia",
+		"destination": "Australia",
+		"departureDate": "04-14-2025",
+		"arrivalDate": "04-15-2025",
+		"price": 63797,
+		"slots": 25,
+		"isActive": true
+	},
+
+]

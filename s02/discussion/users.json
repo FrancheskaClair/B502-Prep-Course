@@ -1,0 +1,25 @@
+[
+	{
+	"_id": "507f1f77bcf86cd799439011",
+	"firstName": "John",
+	"lastName": "Smith",
+	"email": "johnsmith@gmail.com",
+	"password": "johnpogi",
+	"isAdmin": false,
+	"mobileNumber": 09991112222,
+	"enrollments": ["601ccbe89bcd482ee8fa2c99", "601ccc169bcd482ee8fa2c9a"],
+	"datetimeRegistered": "2020-03-15T15:00:00.00Z"
+	},
+	{
+    "_id": "508f1f77bcf86cd799439022",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "janedoe@zuitt.com",
+    "password": "johnhandsome",
+    "isAdmin": true,
+    "mobileNumber": "09277365528",
+    "enrollments": [],
+    "datetimeRegistered": "2020-03-15T15:00:00.00Z"
+	}
+]
+

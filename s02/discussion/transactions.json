@@ -1,0 +1,18 @@
+[
+	{
+		"_id": "61194035bcf86cd799439012",
+		"user_id": "507f1f77bcf86cd799439011",
+		"course_id": "601ccbe89bcd482ee8fa2c99", //html
+		"isPaid": true,
+		"paymentMethod": "cash",
+		"transactionDate": "02-18-2025"
+	},
+	{
+		"_id": "61294035bcf86cd799439abc",
+		"user_id": "507f1f77bcf86cd799439011",
+		"course_id": "507f1f77bcf86cd799439011", // javascript
+		"isPaid" : true,
+		"paymentMethod": "cash",
+		"transactionDate" : "02-18-2025"
+	}
+]
