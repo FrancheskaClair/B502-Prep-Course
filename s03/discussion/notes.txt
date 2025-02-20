@@ -1,0 +1,177 @@
+//CRUD (Create, Read, Update and Delete)
+
+// Seleting a database
+// Syntax: use database_name;
+
+use course_booking;
+
+// Create (Insert/Add)
+// Syntax db.colection_name.insertOne(object to insert);
+db.users.insertOne({ 
+    firstName: "Jane",
+    lastName: "Doe",
+    age: 21,
+    contact: {
+        phone: "87654321",
+        email: "janedoe@gmail.com"
+    },
+    courses: [ "CSS", "Javascript", "Python" ],
+    department: "none"
+});
+
+// Insert multiple documents
+db.users.insertMany(
+        [
+                {
+                    firstName: "Stephen",
+                    lastName: "Hawking",
+                    age: 76,
+                    contact: {
+                        phone: "87654321",
+                        email: "stephenhawking@gmail.com"
+                    },
+                    courses: [ "Python", "React", "PHP" ],
+                    department: "none"
+                },
+                {
+                    firstName: "Neil",
+                    lastName: "Armstrong",
+                    age: 82,
+                    contact: {
+                        phone: "87654321",
+                        email: "neilarmstrong@gmail.com"
+                    },
+                    courses: [ "React", "Laravel", "Sass" ],
+                    department: "none"
+                }
+
+        ]
+)
+
+// Read (Retrieve / Select / Get)
+db.users.find();
+
+// This will retrieve all documents that will match to a condition
+        // Our condition: the firstName should be "Stephen"
+db.users.find({ firstName: "Stephen"});
+
+//Finding a specific document using it's nested data
+db.users.find({ "contact.phone" : "87654321" } );
+
+
+// multiple condiitons
+db.users.find({lastName: "Armstrong" , age:82}); // OR - just need one to match and it will still work
+
+// Searching using array data
+db.users.find({courses: "Javascript"})
+
+// Adding dummy account
+db.users.insertOne({
+    firstName: "Test",
+    lastName: "Test",
+    age: 0,
+    contact: {
+        phone: "00000000",
+        email: "test@gmail.com"
+    },
+    courses: [],
+    department: "none"
+});
+
+// Update (Edit)
+// Update single document
+db.users.updateOne(
+    {firstName: "Test"},
+
+    {
+            $set: {
+                firstName: "Bill",
+                lastName: "Gates",
+                age: 65,
+                contact: {
+                    phone: "12345678",
+                    email: "bill@gmail.com"
+                },
+                courses: ["PHP", "Laravel", "HTML"],
+                department: "Operations"    
+            }
+    }
+)
+
+// Update multiple documents
+db.users.updateMany(
+   { department: "none" },
+   {
+     $set: { department: "HR" }
+   }
+);
+
+
+// Delete (Remove)
+
+// Delete One Command
+db.users.deleteOne({ firstName: "Jane"});
+
+
+// Delete all documents that will match to a condition
+db.users.deleteMany({ department: "HR"});
+
+// Delete all
+db.users.deleteMany({});
+
+// Delete all from the collection (It will not drop the collection)
+db.users.drop();
+
+
+// Aggregation - to filter out data (create summaries)
+
+// $gt (greater than) or $lt(less than)
+db.users.find({ age: { $gt: 50} });
+
+// gte (greater than or equal) or $lte(less than or equal)
+db.users.find({ age: { $gte: 50} });
+
+// $ne (not equal)
+db.users.find({ age: { $ne: 50} });
+
+// In Operator 
+// Allows us to find documents with specific mat criteria on any within after $in: [] operator 
+db.users.find( { lastName: { $in: [ "Hawking", "Doe" ] } } );
+
+// OR
+db.users.find( { $or: [ { firstName: "Neil" }, { age: 76 } ] } );
+
+// Include and exclude fields 
+(only one type can be used in a command)
+// 1 - include
+// 0 - exclude
+
+
+db.users.find(
+        { firstName: "Jane"},
+        {
+            firstName: 1,
+            lastName: 1,
+            contact: 1
+        }
+)
+
+db.users.find(
+        { age: { $gte: 50} },
+        {
+            firstName: 1,
+            lastName: 1,
+        }
+)
+
+db.users.find(
+        { firstName: "Jane"},
+        {
+            contact: 0,
+            department: 0
+        }
+)
+
+
+// Count all documents that has age  greater than 50
+db.users.countDocuments({ age: { $gt: 50} })
