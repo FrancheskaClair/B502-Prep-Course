@@ -49,7 +49,7 @@ async function findRoomPriceGreaterThan(db) {
         {
             name: 1,
             price: 1,
-            rooms_available: 1
+            rooms_available: 1,
             _id: 0
         }
 
@@ -65,7 +65,7 @@ function findRoomPriceLessThan(db) {
         {
             name: 1,
             price: 1,
-            rooms_available: 1.
+            rooms_available: 1,
             _id: 0
         }
 
@@ -78,7 +78,7 @@ function findRoomByPriceAndRoomCount(db) {
    db.cruise.find(
         { 
             price: { $gt: 10000},
-            rooms_available: { $gte:20}
+            rooms_available: { $gte: 20},
 
         }, 
         {
@@ -138,7 +138,7 @@ async function findRoomByAccommodation(db) {
 async function findRoomByAccommodationAndPrice(db) {
     return await (
 
-        db.rooms.find(
+        db.cruise.find(
             {
                 accomodates: { $gte: 4 },
                 price: { $lt: 8000 },
